@@ -24,7 +24,7 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo">
-				<span class="icon fa-gem"></span>
+				<img class="logo" src="images/logo.png" alt="">
 			</div>
 			<div class="content">
 				<div class="inner">
@@ -49,7 +49,7 @@
 			<!-- Intro -->
 			<article id="intro">
 				<h2 class="major">Intro</h2>
-				<div class="image main"><img src="images/pic01.png" alt="" /></div>
+				<div><img class="image main" src="images/pic01.png" alt="" /></div>
 				<p>Hi,<br />
 					I am sai Lokesh. I am a hardworking multimedia student specialized in many skills like
 					photo/videography, editing, animating, etc...<br />
@@ -68,32 +68,71 @@
 			<!-- Work -->
 			<article id="work">
 				<h2 class="major">Work</h2>
-				<h3>Animation:</h3>
+				<h3>my Animations:</h3>
 				<div class="iframe-container">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/yq79ED_UOmY"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div><br />
-				<h3>Sketches:</h3>
+
+				<h3>my Digital art:</h3>
 				<main>
 					<div class="box">
-						<img src="images/Sketches/1.png">
+						<img src="images/Digital art/1.png" onclick="FullView(this.src)"/>
 					</div>
 					<div class="box">
-						<img src="images/Sketches/2.png">
+						<img src="images/Digital art/2.png" onclick="FullView(this.src)"/>
 					</div>
 					<div class="box">
-						<img src="images/Sketches/3.png">
+						<img src="images/Digital art/3.png" onclick="FullView(this.src)"/>
 					</div>
 					<div class="box">
-						<img src="images/Sketches/4.png">
+						<img src="images/Digital art/4.png" onclick="FullView(this.src)"/>
+					</div>
+					
+				</main>
+
+				<div id="FullImageView">
+					<img id="FullImage">
+					<span id="CloseButton" onclick="CloseFullView()">&times;</span>
+				</div>
+				<script type="text/javascript">
+					function FullView(ImgLink) {
+							document.getElementById("FullImage").src=ImgLink;
+							document.getElementById("FullImageView").style.display="block";
+					}
+					function CloseFullView() {
+						document.getElementById("FullImageView").style.display ="none";
+					}
+
+				</script>
+
+				<h3>my Sketches:</h3>
+				<main>
+					<div class="box">
+						<img src="images/Sketches/1.png" onclick="FullView(this.src)">
 					</div>
 					<div class="box">
-						<img src="images/Sketches/5.png">
+						<img src="images/Sketches/2.png" onclick="FullView(this.src)">
 					</div>
 					<div class="box">
-						<img src="images/Sketches/6.png">
+						<img src="images/Sketches/3.png" onclick="FullView(this.src)">
+					</div>
+					<div class="box">
+						<img src="images/Sketches/4.png" onclick="FullView(this.src)">
+					</div>
+					<div class="box">
+						<img src="images/Sketches/5.png" onclick="FullView(this.src)">
+					</div>
+					<div class="box">
+						<img src="images/Sketches/6.png" onclick="FullView(this.src)">
+					</div>
+					<div class="box">
+						<img src="images/Sketches/7.png" onclick="FullView(this.src)">
+					</div>
+					<div class="box">
+						<img src="images/Sketches/8.png" onclick="FullView(this.src)">
 					</div>
 				</main>
 
@@ -160,6 +199,7 @@
 					<li>Photo editing</li>
 					<li>Photo manipulation</li>
 					<li>graphic designing</li>
+					<li>web designing</li>
 					<li>video editing</li>
 					<li>video compositing</li>
 					<li>animation</li>
